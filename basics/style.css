@@ -1,3 +1,16 @@
+/*-----header-----*/
+header {
+    height: 400px;
+}
+#about-site {
+    color:grey;
+}
+
+/*-----main-----*/
+article {
+    width: 1000px;
+}
+
 h1 {
     font-size: 40px;
     color: darkslategrey;
@@ -7,10 +20,6 @@ p {
     color: dimgrey;
 }
 
-header {
-    height: 400px;
-}
-
-article{
-    width:1000px;
+.h-style {
+    color:darkslategrey;
 }
