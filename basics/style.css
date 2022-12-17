@@ -1,3 +1,16 @@
-h1{
-    color:darkslategrey
+h1 {
+    font-size: 40px;
+    color: darkslategrey;
+}
+
+p {
+    color: dimgrey;
+}
+
+header {
+    height: 400px;
+}
+
+article{
+    width:1000px;
 }
