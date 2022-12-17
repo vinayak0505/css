@@ -1,31 +1,32 @@
 /*-----header-----*/
-header {
+#main-header {
     height: 400px;
 }
+
 #about-site {
-    color:grey;
+    color: grey;
+}
+
+
+#main-header a{
+    font-size:28px;
+    color:black;
+}
+#main-header a:hover{
+    color: orange;
 }
 
 /*-----main-----*/
-article {
-    width: 1000px;
-}
-
 h1 {
     font-size: 40px;
     color: darkslategrey;
     font-family: sans-serif;
 }
 
-h4 {
-    font-family: monospace;
-    font-size: 1.33rem;
-}
-
-p {
-    color: dimgrey;
+#blog-content {
+    width: 1000px;
 }
 
 .h-style {
-    color:darkslategrey;
+    color: darkslategrey;
 }
