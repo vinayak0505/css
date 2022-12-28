@@ -93,21 +93,96 @@ body {
 }
 
 #my-image img {
-    border: 2px solid white;
     height: 100%;
     width: 100%;
     border-radius: 50%;
-    box-shadow: 0px 0px 10px lightgrey;
+    border: 3px solid white;
+    box-shadow: 1px 1px 10px 2px lightgrey;
 }
 
-#about p{
-    padding: 20px 170px;
-    font-size: 17px;
+
+#about-para {
+    padding: 10px;
+    width: 70%;
+    text-align: justify;
     color: grey;
-    word-spacing: 2px;
-    line-height: 25px;
+    line-height: 28px;
+    font-size: 1.1rem;
+    margin: auto;
 }
-#about p span {
+
+.text-highlight {
     color: #2857a4;
-    font-weight: bolder;
+    font-weight: 600;
+}
+
+
+/* Skills */
+
+#skills div {
+    border-top-left-radius: 0.8rem;
+    border-bottom-left-radius: 0.8rem;
+}
+
+#skills>div {
+    width: 100px;
+    height: 20px;
+    background-color: gray;
+    border-top-right-radius: 0.8rem;
+    border-bottom-right-radius: 0.8rem;
+    display: inline-block;
+
+
+}
+
+#skills>div>div {
+    height: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    font-size: 0.9rem;
+    color: white;
+    padding-left: 10px;
+    align-items: center;
+}
+
+#skills>div:nth-child(3n)>div {
+    background-color: green;
+}
+
+#skills>div:nth-child(3n + 1)>div {
+    background-color: red;
+}
+
+
+#skills>div:nth-child(3n + 2)>div {
+    background-color: orange;
+}
+
+/* Skills value */
+#c_plus_plus {
+    width: 80%;
+}
+
+#dart {
+    width: 80%;
+}
+
+#java {
+    width: 60%;
+}
+
+#kotlin {
+    width: 60%;
+}
+
+#javascript {
+    width: 50%;
+}
+
+#typescript {
+    width: 50%;
+}
+
+#python {
+    width: 50%;
 }
