@@ -31,7 +31,7 @@ section:nth-child(even) {
 .horizontal-list li {
     display: inline-block;
     margin: 0px 8px 8px 0px;
-    font-weight: 100;
+    font-weight: 100px;
     font-size: 0.9rem;
 }
 
@@ -252,4 +252,95 @@ section:nth-child(even) {
 
 #portfolio p{
     padding: 20px;
+}
+
+
+/* --------------Contacts---------- */
+#contact{
+    color: white;
+    padding: 10px 40px 20px 40px;
+    background: linear-gradient(45deg,#2857a4,#403066);
+}
+
+#contact>div {
+    display: flex;
+    justify-content: center;
+}
+
+#contact h1{
+    color: white;
+}
+
+#contact input{
+    display: block;
+    border: 0;
+    width: 80%;
+    border-bottom: 2px solid white;
+    background-color: transparent;
+    font-size: 1rem;
+    padding: 10px;
+    margin: 30px;
+}
+
+#your-info-form {
+    justify-content: center;
+    width: 50%;
+}
+
+#contact button{
+    display: block;
+    align-self: center;
+    margin: auto;
+    border: 2px solid white;
+    padding: 10px;
+    font-size: 16px;
+    color: white;
+    font-weight: bold;
+    background-color: transparent;
+}
+
+.multiline {
+    line-height: 40px;
+}
+
+#get-in-touch{
+    width: 50%;
+    margin: 30px 0px;
+}
+
+#get-in-touch>*{
+    padding: 0 10%;
+}
+
+#contact p{
+    font-size: 1rem;
+    color: rgb(173, 173, 173);
+}
+
+#contact i{
+    font-size: 20px;
+}
+#contant i{
+    display: inline;
+    width: 20px;
+    height: 20px;
+    align-self: baseline;
+    font-family: none;
+}
+
+.fa {
+    font-size: 20px;
+}
+
+
+.inline {
+    display: inline;
+}
+
+h6{
+    margin: 0;
+}
+
+#contact #links{
+    margin: 40px;
 }
