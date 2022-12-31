@@ -1,0 +1,23 @@
+#page {
+    height: 100%;
+    width: 100%;
+}
+
+#box {
+    position: fixed;
+    height:0px;
+    top:0px;
+    left:0px;
+    width:0px;
+    overflow:hidden;
+    transition: width 1s,height 1s,top 1s, left 1s, background-color 1s;  
+}
+
+#box:target {
+    height: 100px;
+    width: 100px;
+    top:50%;
+    left:50%;
+    background-color: grey;
+    margin:auto;  
+}
