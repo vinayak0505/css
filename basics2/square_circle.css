@@ -1,0 +1,12 @@
+#box{
+    background-color: aqua;
+    width: 100px;
+    height: 100px;
+    transition: all 1s ease-in-out;
+}
+
+#box:hover{
+    rotate:360deg;
+    transform: scale(0.7) translate(500px) ;
+    border-radius: 50%;
+}
