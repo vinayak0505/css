@@ -1,0 +1,25 @@
+#div1 {
+    height: 100px;
+    width: 100px;
+    position: relative;
+    top: 100px;
+    left: 100px;
+    background-color: aqua;
+    animation: boxanimation 1s linear 1;
+}
+@keyframes boxanimation {
+    from{
+    }
+    25%{
+        translate: 0 -100px;
+    }
+    50%{
+        translate: 0 0;
+    }
+    75%{
+        translate: 0 -50px;
+    }
+    100%{
+        translate: 0 0;
+    }
+}
