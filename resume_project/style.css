@@ -344,3 +344,62 @@ h6{
 #contact #links{
     margin: 40px;
 }
+
+/* --------------Work Experience----------- */
+
+#experience{
+    padding: 10px 100px 20px 100px;
+    flex-wrap: wrap;
+    display: flex;
+    justify-content: center;
+}
+.timeline-box{
+    width: 40%;
+    border: 2px solid black;
+    position: relative;
+    height: 100px;
+    left:5%;
+}
+
+.timeline-box::after{
+    width: 0.5rem;
+    height: 0.5rem;
+    border-radius: 50%;
+    content: '';
+    background-color: #0096fa6b;
+    top: 25%;
+    position: absolute;
+    left: 111.8%;
+    z-index: 2;
+}
+
+.timeline-box:nth-child(even)::after{
+    left: -13.2%;
+}
+
+#experience .timeline{
+    width: 100%;
+    border: 2px solid black;
+    position: relative;
+}
+
+.timeline-box:nth-child(even){
+    left:55%;
+}
+
+.divider{
+    position: absolute;
+    height: 75%;
+    left: 50%;
+    width: 0;
+    top: 10%;
+    text-align: center;
+    border: 3px dashed #0096fa6b;
+}
+
+.timeline-place{
+    transform: rotate(90deg); 
+    position: sticky;
+    top: 25%; 
+    z-index: 3;
+}
