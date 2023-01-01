@@ -1,0 +1,21 @@
+.box {
+    width: 32%;
+    display: inline-block;
+    height: 300px;
+}
+#heading{
+    text-align: center;
+    font-weight: bold;
+}
+#main {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 2%;
+}
+
+@media screen and (max-width:600px) {
+    .box {
+        width: 100%;
+    }
+}
