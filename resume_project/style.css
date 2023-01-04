@@ -355,10 +355,38 @@ h6{
 }
 .timeline-box{
     width: 40%;
-    border: 2px solid black;
+    border: 2px solid transparent;
     position: relative;
-    height: 100px;
+    /* height: 100px; */
     left:5%;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+}
+
+.timeline-box>div{
+}
+
+.timeline-box>div:first-child{
+}
+
+.timeline-box>div:nth-child(2){
+    color: grey;
+    font-size: 1.5rem;
+}
+
+.timeline-box>div:nth-child(3){
+    color: grey;
+    font-size: 1.0rem;
+}
+
+.timeline-box:nth-child(odd){
+    align-items: end;
+}
+
+.timeline-box:nth-child(odd) div{
+    align-items: end;
+    text-align: right;
 }
 
 .timeline-box::after{
@@ -377,7 +405,8 @@ h6{
     left: -13.2%;
 }
 
-#experience .timeline{
+.timeline{
+    padding: 20px 0px;
     width: 100%;
     border: 2px solid black;
     position: relative;
@@ -392,7 +421,7 @@ h6{
     height: 75%;
     left: 50%;
     width: 0;
-    top: 10%;
+    top: 7%;
     text-align: center;
     border: 3px dashed #0096fa6b;
 }
@@ -402,4 +431,11 @@ h6{
     position: sticky;
     top: 25%; 
     z-index: 3;
+}
+/* ------------Education-------------- */
+#education{
+    padding: 10px 100px 20px 100px;
+    flex-wrap: wrap;
+    display: flex;
+    justify-content: center;
 }
