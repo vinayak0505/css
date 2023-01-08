@@ -1,0 +1,18 @@
+body {
+    background-image: url(https://ninjasfiles.s3.amazonaws.com/asset_0000000000000020_1549743985_macbook_mouse.jpg);
+    background-position: center;
+    background-repeat: repeat-y;
+}
+
+header h1 {
+    line-height: 40vw;
+    z-index: 10;
+}
+
+main .card {
+    min-height: 350px;
+}
+
+main .card p {
+    min-height: 250px;
+}
