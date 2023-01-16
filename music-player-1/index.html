@@ -2,170 +2,534 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <!-- font awasome  -->
-    <script src="https://kit.fontawesome.com/b3348ae33f.js" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="styles.css" type="text/css" />
-    <title>Static Template</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- google font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <title>Vinayak Music Player</title>
+    <script src="https://kit.fontawesome.com/6c93999fd1.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="./style.css">
+
 </head>
 
-<body style="background-color: black;">
-    <!-- Header -->
-    <header style="background-color: green;">
-        <!-- logo -->
-        <img src="logo.jpg" alt="" height="100px">
-        <h1 class="wrap_text">music</h1>
-    </header>
-    <!-- Center -->
-    <div id="main_content">
-        <!-- main -->
-        <main style="background-color: brown;">
-            <!-- big cards -->
-            <section id="moods">
-                <img alt="">
-                <img alt="">
-                <img alt="">
-            </section>
-            <!-- latest Release  -->
-            <section>
-                <!-- heading -->
-                <h5>Latest Release</h5>
-                <!-- content -->
-                <section id="latest_release">
-                    <div class="lastest_release_content_box">
-                        <img alt="album image" />
-                        <div class="self_center">
-                            <h6>White Mountains</h6>
-                            <p>asdkfj</p>
+<body>
+
+    <body>
+        <header>
+            <div class="section-one-1">
+                <div class="section-one-logo">
+                    <a class="normal-style" href="/">
+                        <img class="circle-image"
+                            src="https://i.pinimg.com/originals/a4/46/f4/a446f4759a46cd9e8f9be7af444a2c22.jpg"
+                            alt="logo">
+                        <p>Vinayak<br>Player</p>
+                    </a>
+                </div>
+                <div class="section-one-navigation">
+                    <b>Favourites</b>
+                </div>
+            </div>
+            <div class="section-one-2">
+                <div class="search-bar"><i class="fa-solid fa-magnifying-glass search-icon"></i><input
+                        placeholder="Search"><i class="fa-solid fa-microphone mic-icon"></i></div>
+                <div class="notification">
+                    <i class="fa-solid fa-bell"></i>
+                    <div class="dot"></div>
+                </div>
+                <div class="profile">
+                    <img src="https://media.licdn.com/dms/image/C5603AQFyOkx9yhhw3A/profile-displayphoto-shrink_800_800/0/1604856445167?e=1678320000&v=beta&t=snaPHjr9-gOfUFRMTvpQ9947rsaBMXWJOiBtty_F3-Q"
+                        alt="profile img">
+                </div>
+            </div>
+        </header>
+
+        <section class="content-wrapper">
+            <div class="main-section">
+                <div class="slider">
+                    <img src="https://www.consciouslifestylemag.com/wp-content/uploads/2016/05/music-and-the-brain-affects-mood-surreal-colors-min.jpg"
+                        alt="main art1" class="slider-img">
+                    <img src="https://media.blogto.com/events/2020/01/08/original_image84bbe907-fc3b-487c-baea-b705650aac7a.jpg?w=2048&cmd=resize&quality=70"
+                        alt="main art2" class="slider-img">
+                    <img src="https://img.huffingtonpost.com/asset/5cd37d8a2100003000d3cb5c.png?ops=scalefit_720_noupscale"
+                        alt="main art3" class="slider-img">
+                </div>
+
+                <section class="latest-release">
+                    <h2>Latest Release</h2>
+                    <div class="latest-release-wrapper">
+                        <div class="latest-release-card">
+                            <img src="https://i0.wp.com/creativesfeed.com/wp-content/uploads/2018/08/Life-in-a-Bubble-by-Aeforia.jpg?w=8000&ssl=1"
+                                alt="Onism">
+                            <div class="latest-songs-meta">
+                                <div class="latest-songs-name">Onism</div>
+                                <div class="latest-songs-date">Jan 14,2022</div>
+                            </div>
+                            <div class="latest-songs-details">
+                                <div class="latest-songs-menu"><i class="fa-solid fa-ellipsis"></i></div>
+                                <div class="latest-songs-duration">4:45</div>
+                            </div>
                         </div>
-                        <div>
-                            <i class="fa-solid fa-ellipsis"></i>
-                            <p class="time">4:44</p>
+                        <div class="latest-release-card">
+                            <img src="https://i0.wp.com/creativesfeed.com/wp-content/uploads/2018/08/Life-in-a-Bubble-by-Aeforia.jpg?w=8000&ssl=1"
+                                alt="">
+                            <div class="latest-songs-meta">
+                                <div class="latest-songs-name">Onism</div>
+                                <div class="latest-songs-date">Jan 14,2022</div>
+                            </div>
+                            <div class="latest-songs-details">
+                                <div class="latest-songs-menu"><i class="fa-solid fa-ellipsis"></i></div>
+                                <div class="latest-songs-duration">4:45</div>
+                            </div>
                         </div>
-                    </div>
-                    <div class="lastest_release_content_box">
-                        <img alt="album image" />
-                        <div class="self_center">
-                            <h6>White Mountains</h6>
-                            <p>asdkfj</p>
+                        <div class="latest-release-card">
+                            <img src="https://i0.wp.com/creativesfeed.com/wp-content/uploads/2018/08/Life-in-a-Bubble-by-Aeforia.jpg?w=8000&ssl=1"
+                                alt="">
+                            <div class="latest-songs-meta">
+                                <div class="latest-songs-name">Onism</div>
+                                <div class="latest-songs-date">Jan 14,2022</div>
+                            </div>
+                            <div class="latest-songs-details">
+                                <div class="latest-songs-menu"><i class="fa-solid fa-ellipsis"></i></div>
+                                <div class="latest-songs-duration">4:45</div>
+                            </div>
                         </div>
-                        <div>
-                            <i class="fa-solid fa-ellipsis"></i>
-                            <p class="time">4:44</p>
+                        <div class="latest-release-card">
+                            <img src="https://i0.wp.com/creativesfeed.com/wp-content/uploads/2018/08/Life-in-a-Bubble-by-Aeforia.jpg?w=8000&ssl=1"
+                                alt="">
+                            <div class="latest-songs-meta">
+                                <div class="latest-songs-name">Onism</div>
+                                <div class="latest-songs-date">Jan 14,2022</div>
+                            </div>
+                            <div class="latest-songs-details">
+                                <div class="latest-songs-menu"><i class="fa-solid fa-ellipsis"></i></div>
+                                <div class="latest-songs-duration">4:45</div>
+                            </div>
                         </div>
-                    </div>
-                    <div class="lastest_release_content_box">
-                        <img alt="album image" />
-                        <div class="self_center">
-                            <h6>White Mountains</h6>
-                            <p>asdkfj</p>
-                        </div>
-                        <div>
-                            <i class="fa-solid fa-ellipsis"></i>
-                            <p class="time">4:44</p>
-                        </div>
-                    </div>
-                    <div class="lastest_release_content_box">
-                        <img alt="album image" />
-                        <div class="self_center_h">
-                            <h6>White Mountains</h6>
-                            <p>asdkfj</p>
-                        </div>
-                        <div>
-                            <i class="fa-solid fa-ellipsis"></i>
-                            <p class="time">4:44</p>
-                        </div>
-                    </div>
-                </section>
-            </section>
-            <!-- popular Artists -->
-            <section>
-                <h5>Popular Artists</h5>
-                <section id="popular_artists">
-                    <div class="popular_artist">
-                        <img alt="">
-                        <p class="self_center_v">Ed Sheeran</p>
-                    </div>
-                    <div class="popular_artist">
-                        <img alt="">
-                        <p class="self_center_v">Ed Sheeran</p>
-                    </div>
-                    <div class="popular_artist">
-                        <img alt="">
-                        <p class="self_center_v">Ed Sheeran</p>
-                    </div>
-                    <div class="popular_artist">
-                        <img alt="">
-                        <p class="self_center_v">Ed Sheeran</p>
                     </div>
                 </section>
 
-            </section>
-            <!-- stations -->
-            <section id="stations">
-                <img alt="">
-                <section class="station">
-                    <img alt="">
-                    <p>asldfkj</p>
-                </section>
-            </section>
-            <!-- genere -->
-            <section id="generes">
-                <section class="genere">
-                    <img alt="">
-                    <p>asldfkj</p>
-                </section>
-                <section class="genere">
-                    <img alt="">
-                    <p>asldfkj</p>
-                </section>
-                <section class="genere">
-                    <img alt="">
-                    <p>asldfkj</p>
-                </section>
-            </section>
-            <!-- latest englih -->
-            <section>
-                <h5>Latest English</h5>
-                <section class="latest">
-                    <div class="latest_item">
-                        <img alt="">
-                        <h6>White Mountains</h6>
-                        <p>asdkfj</p>
-                    </div>
-                    <div class="latest_item">
-                        <img alt="">
-                        <h6>White Mountains</h6>
-                        <p>asdkfj</p>
-                    </div>
-                </section>
-            </section>
-            <!-- latest hindi -->
-            <section>
-                <h5>Latest Hindi</h5>
-                <section class="latest">
-                    <div class="latest_item">
-                        <img alt="">
-                        <h6>White Mountains</h6>
-                        <p>asdkfj</p>
-                    </div>
-                    <div class="latest_item">
-                        <img alt="">
-                        <h6>White Mountains</h6>
-                        <p>asdkfj</p>
+                <!-- popular-artists -->
+                <section class="popular-artists">
+                    <h2>Popular Atists</h2>
+                    <div class="popular-artists-wrapper">
+                        <div class="popular-artists-cover">
+                            <img src="https://assets.teenvogue.com/photos/5776b4ae924ce46478f244d1/master/pass/country-18.jpg"
+                                alt="popular artists image">
+                            <h3>Ed Sheeran</h3>
+                        </div>
+                        <div class="popular-artists-cover">
+                            <img src="https://assets.teenvogue.com/photos/5776b4ae924ce46478f244d1/master/pass/country-18.jpg"
+                                alt="popular artists image">
+                            <h3>Ed Sheeran</h3>
+                        </div>
+                        <div class="popular-artists-cover">
+                            <img src="https://assets.teenvogue.com/photos/5776b4ae924ce46478f244d1/master/pass/country-18.jpg"
+                                alt="popular artists image">
+                            <h3>Ed Sheeran</h3>
+                        </div>
+                        <div class="popular-artists-cover">
+                            <img src="https://assets.teenvogue.com/photos/5776b4ae924ce46478f244d1/master/pass/country-18.jpg"
+                                alt="popular artists image">
+                            <h3>Ed Sheeran</h3>
+                        </div>
+                        <div class="popular-artists-cover">
+                            <img src="https://assets.teenvogue.com/photos/5776b4ae924ce46478f244d1/master/pass/country-18.jpg"
+                                alt="popular artists image">
+                            <h3>Ed Sheeran</h3>
+                        </div>
+                        <div class="popular-artists-cover">
+                            <img src="https://assets.teenvogue.com/photos/5776b4ae924ce46478f244d1/master/pass/country-18.jpg"
+                                alt="popular artists image">
+                            <h3>Ed Sheeran</h3>
+                        </div>
+                        <div class="popular-artists-cover">
+                            <img src="https://assets.teenvogue.com/photos/5776b4ae924ce46478f244d1/master/pass/country-18.jpg"
+                                alt="popular artists image">
+                            <h3>Ed Sheeran</h3>
+                        </div>
                     </div>
                 </section>
-            </section>
-        </main>
-        <!-- Queue -->
-        <aside style="background-color: orange;"></aside>
-    </div>
-    <!-- cntroller -->
-    <footer></footer>
-</body>
+                <section class="stations-section">
+                    <img class="stations-cover"
+                        src="https://images.cdn4.stockunlimited.net/preview1300/music-collection_1471790.jpg"
+                        alt="stations">
 
-<script src="script.js"></script>
+                    <div class="stations-category-card">
+                        <img class="stations-image"
+                            src="https://i.pinimg.com/originals/b8/4d/9b/b84d9b43fe87d37b672c211f865e854e.jpg"
+                            alt="Love musing Station">
+                        <p class="stations-name">Love</p>
+                    </div>
+
+                    <div class="stations-category-card">
+                        <img class="stations-image"
+                            src="https://i.pinimg.com/originals/b8/4d/9b/b84d9b43fe87d37b672c211f865e854e.jpg"
+                            alt="Love musing Station">
+                        <p class="stations-name">Love</p>
+                    </div>
+
+                    <div class="stations-category-card">
+                        <img class="stations-image"
+                            src="https://i.pinimg.com/originals/b8/4d/9b/b84d9b43fe87d37b672c211f865e854e.jpg"
+                            alt="Love musing Station">
+                        <p class="stations-name">Love</p>
+                    </div>
+
+                    <div class="stations-category-card">
+                        <img class="stations-image"
+                            src="https://i.pinimg.com/originals/b8/4d/9b/b84d9b43fe87d37b672c211f865e854e.jpg"
+                            alt="Love musing Station">
+                        <p class="stations-name">Love</p>
+                    </div>
+
+                    <div class="stations-category-card">
+                        <img class="stations-image"
+                            src="https://i.pinimg.com/originals/b8/4d/9b/b84d9b43fe87d37b672c211f865e854e.jpg"
+                            alt="Love musing Station">
+                        <p class="stations-name">Love</p>
+                    </div>
+
+                    <div class="stations-category-card">
+                        <img class="stations-image"
+                            src="https://i.pinimg.com/originals/b8/4d/9b/b84d9b43fe87d37b672c211f865e854e.jpg"
+                            alt="Love musing Station">
+                        <p class="stations-name">Love</p>
+                    </div>
+
+                </section>
+
+                <section class="music-category">
+                    <div class="music-cat-cover party-shadow">
+                        <p>Party</p>
+                    </div>
+
+                    <div class="music-cat-cover electronic-shadow">
+                        <p>Electronic</p>
+                    </div>
+
+                    <div class="music-cat-cover road-trip-shadow">
+                        <p>Road Trip</p>
+                    </div>
+                </section>
+
+                <section class="latest-english">
+                    <h2>Latest English</h2>
+                    <div class="latest-english-wrapper">
+                        <div class="latest-english-cover">
+                            <img src="https://mir-s3-cdn-cf.behance.net/project_modules/1400/fe529a64193929.5aca8500ba9ab.jpg"
+                                alt="True Love">
+                            <p>True Love</p>
+                            <p>Aug 11, 2017</p>
+                        </div>
+                        <div class="latest-english-cover">
+                            <img src="https://d1csarkz8obe9u.cloudfront.net/posterpreviews/night-song-album-cover-poster-template-3efe92c34ef97d6356afa813d2ac80a4_screen.jpg?ts=1561447696"
+                                alt="Night Songs">
+                            <p>Night Songs</p>
+                            <p>Aug 11, 2017</p>
+                        </div>
+                        <div class="latest-english-cover">
+                            <img src="https://images-na.ssl-images-amazon.com/images/I/71KeKbqvwoL._SL1050_.jpg"
+                                alt="Women Music">
+                            <p>Women</p>
+                            <p>Aug 11, 2017</p>
+                        </div>
+                        <div class="latest-english-cover">
+                            <img src="https://th.bing.com/th/id/OIP.Tm6T5tYVI2ob3ICGlO6viQHaHa?w=225&h=220&c=7&r=0&o=5&dpr=2.2&pid=1.7"
+                                alt="he arouse">
+                            <p>he arouse</p>
+                            <p>Aug 11, 2017</p>
+                        </div>
+                        <div class="latest-english-cover">
+                            <img src="https://a.fastcompany.net/multisite_files/codesign/imagecache/slideshow_large/slideshow/2013/01/1671590-slide-square-600-1.jpg"
+                                alt="Dream Land">
+                            <p>Dream Land</p>
+                            <p>Aug 11, 2017</p>
+                        </div>
+                        <div class="latest-english-cover">
+                            <img src="https://th.bing.com/th/id/OIP.OCcyRaSHeZZVgBwujiu1WwHaHa?pid=ImgDet&rs=1"
+                                alt="Melmek">
+                            <p>Melmek</p>
+                            <p>Aug 11, 2017</p>
+                        </div>
+                    </div>
+                </section>
+                <section class="latest-english">
+                    <h2>Latest Hindi</h2>
+                    <div class="latest-english-wrapper">
+                        <div class="latest-english-cover">
+                            <img src="https://images.genius.com/6ea8bbabbb353ed5c9609ea62b8f2e7c.999x999x1.jpg"
+                                alt="Raabta">
+                            <p>Raabts</p>
+                            <p>Aug 11, 2017</p>
+                        </div>
+                        <div class="latest-english-cover">
+                            <img src="https://a10.gaanacdn.com/images/albums/87/2501587/crop_480x480_1558090897_2501587.jpg"
+                                alt="Bharat">
+                            <p>Bharat</p>
+                            <p>Aug 11, 2017</p>
+                        </div>
+                        <div class="latest-english-cover">
+                            <img src="https://i.pinimg.com/originals/0d/95/a6/0d95a6e3ba860ff2f557c27b8dfc3e50.jpg"
+                                alt="Roy">
+                            <p>Roy</p>
+                            <p>Aug 11, 2017</p>
+                        </div>
+                        <div class="latest-english-cover">
+                            <img src="https://ahummingheart.com/wp-content/uploads/2017/12/MeriPyaariBindu.jpg"
+                                alt="Bindu">
+                            <p>Bindu</p>
+                            <p>Aug 11, 2017</p>
+                        </div>
+                        <div class="latest-english-cover">
+                            <img src="https://4.bp.blogspot.com/-xJtjCLPJE6E/W9WiwwM8szI/AAAAAAAABsU/2HqUMXqdZ0MDWWvshfIJYE8Gf7jdsLaFACLcBGAs/s1600/MP3_Lijo%2BGeorge-Dj%2BChetas%252C%2BTanishk%2BBagchi%252C%2BJam8%252C%2BLijo%2BGeorge%2B%2526%2BDj%2BChetas%2B-%2BLoveyatri%2B-%2BA%2BJourney%2Bof%2BLove%2B%2528Original%2BMotion%2BPicture%2BSoundtrack%2529_iTunes_Plus_AAC_M4A.jpg"
+                                alt="Love Yatri">
+                            <p>Love Yatri</p>
+                            <p>Aug 11, 2017</p>
+                        </div>
+                        <div class="latest-english-cover">
+                            <img src="https://i.pinimg.com/736x/f9/88/19/f98819b35afb059c95e6927f593738ca.jpg"
+                                alt="Yamla Pagla Devana">
+                            <p>Yamla Pagla Devana</p>
+                            <p>Aug 11, 2017</p>
+                        </div>
+                    </div>
+                </section>
+
+            </div>
+            <aside>
+                <div class="aside-queue">
+                    <div class="queue-header">
+                        <h2><b>Queue</b></h2>
+                        <div class="queue-header-menu">
+                            <p>Queue</p> <i class="fa-solid fa-angle-down green-color"></i>
+                        </div>
+                    </div>
+                    <div class="queue-songs-wrapper">
+                        <div class="queue-songs-card">
+                            <div class="queue-song-cover">
+                                <p class="queue-number-style">01</p>
+                                <img src="https://mir-s3-cdn-cf.behance.net/project_modules/1400/b2456f38292485.57697f49c865d.jpg"
+                                    alt="Worry Anout Us">
+                                <div class="queue-song-meta">
+                                    <p class="queue-song-name">Worry Anout Us</p>
+                                    <p class="queue-song-artist">Else</p>
+                                </div>
+                            </div>
+                            <div class="queue-favourite">
+                                <i class="fa-regular fa-heart"></i>
+                            </div>
+                        </div>
+                        <div class="queue-songs-card">
+                            <div class="queue-song-cover">
+                                <p class="queue-number-style">01</p>
+                                <img src="https://mir-s3-cdn-cf.behance.net/project_modules/1400/fe529a64193929.5aca8500ba9ab.jpg"
+                                    alt="True Love">
+                                <div class="queue-song-meta">
+                                    <p class="queue-song-name">Worry Anout Us</p>
+                                    <p class="queue-song-artist">Else</p>
+                                </div>
+                            </div>
+                            <div class="queue-favourite">
+                                <i class="fa-regular fa-heart"></i>
+                            </div>
+                        </div>
+                        <div class="queue-songs-card">
+                            <div class="queue-song-cover">
+                                <p class="queue-number-style">01</p>
+                                <img src="https://d1csarkz8obe9u.cloudfront.net/posterpreviews/night-song-album-cover-poster-template-3efe92c34ef97d6356afa813d2ac80a4_screen.jpg?ts=1561447696"
+                                    alt="Night Songs">
+                                <div class="queue-song-meta">
+                                    <p class="queue-song-name">Worry Anout Us</p>
+                                    <p class="queue-song-artist">Else</p>
+                                </div>
+                            </div>
+                            <div class="queue-favourite">
+                                <i class="fa-regular fa-heart"></i>
+                            </div>
+                        </div>
+                        <div class="queue-songs-card">
+                            <div class="queue-song-cover">
+                                <p class="queue-number-style">01</p>
+                                <img src="https://images-na.ssl-images-amazon.com/images/I/71KeKbqvwoL._SL1050_.jpg"
+                                    alt="Women Music">
+                                <div class="queue-song-meta">
+                                    <p class="queue-song-name">Worry Anout Us</p>
+                                    <p class="queue-song-artist">Else</p>
+                                </div>
+                            </div>
+                            <div class="queue-favourite">
+                                <i class="fa-regular fa-heart"></i>
+                            </div>
+                        </div>
+                        <div class="queue-songs-card">
+                            <div class="queue-song-cover">
+                                <p class="queue-number-style">01</p>
+                                <img src="https://th.bing.com/th/id/OIP.Tm6T5tYVI2ob3ICGlO6viQHaHa?w=225&h=220&c=7&r=0&o=5&dpr=2.2&pid=1.7"
+                                    alt="he arouse">
+                                <div class="queue-song-meta">
+                                    <p class="queue-song-name">Worry Anout Us</p>
+                                    <p class="queue-song-artist">Else</p>
+                                </div>
+                            </div>
+                            <div class="queue-favourite">
+                                <i class="fa-regular fa-heart"></i>
+                            </div>
+                        </div>
+                        <div class="queue-songs-card">
+                            <div class="queue-song-cover">
+                                <p class="queue-number-style">01</p>
+                                <img src="https://a.fastcompany.net/multisite_files/codesign/imagecache/slideshow_large/slideshow/2013/01/1671590-slide-square-600-1.jpg"
+                                    alt="Dream Land">
+                                <div class="queue-song-meta">
+                                    <p class="queue-song-name">Worry Anout Us</p>
+                                    <p class="queue-song-artist">Else</p>
+                                </div>
+                            </div>
+                            <div class="queue-favourite">
+                                <i class="fa-regular fa-heart"></i>
+                            </div>
+                        </div>
+                        <div class="queue-songs-card">
+                            <div class="queue-song-cover">
+                                <p class="queue-number-style">01</p>
+                                <img src="https://th.bing.com/th/id/OIP.OCcyRaSHeZZVgBwujiu1WwHaHa?pid=ImgDet&rs=1"
+                                    alt="Melmek">
+                                <div class="queue-song-meta">
+                                    <p class="queue-song-name">Worry Anout Us</p>
+                                    <p class="queue-song-artist">Else</p>
+                                </div>
+                            </div>
+                            <div class="queue-favourite">
+                                <i class="fa-regular fa-heart"></i>
+                            </div>
+                        </div>
+                        <div class="queue-songs-card">
+                            <div class="queue-song-cover">
+                                <p class="queue-number-style">01</p>
+                                <img src="https://images.genius.com/6ea8bbabbb353ed5c9609ea62b8f2e7c.999x999x1.jpg"
+                                    alt="Raabta">
+                                <div class="queue-song-meta">
+                                    <p class="queue-song-name">Worry Anout Us</p>
+                                    <p class="queue-song-artist">Else</p>
+                                </div>
+                            </div>
+                            <div class="queue-favourite">
+                                <i class="fa-regular fa-heart"></i>
+                            </div>
+                        </div>
+                        <div class="queue-songs-card">
+                            <div class="queue-song-cover">
+                                <p class="queue-number-style">01</p>
+                                <img src="https://a10.gaanacdn.com/images/albums/87/2501587/crop_480x480_1558090897_2501587.jpg"
+                                    alt="Bharat">
+                                <div class="queue-song-meta">
+                                    <p class="queue-song-name">Worry Anout Us</p>
+                                    <p class="queue-song-artist">Else</p>
+                                </div>
+                            </div>
+                            <div class="queue-favourite">
+                                <i class="fa-regular fa-heart"></i>
+                            </div>
+                        </div>
+                        <div class="queue-songs-card">
+                            <div class="queue-song-cover">
+                                <p class="queue-number-style">01</p>
+                                <img src="https://i.pinimg.com/originals/0d/95/a6/0d95a6e3ba860ff2f557c27b8dfc3e50.jpg"
+                                    alt="Roy">
+                                <div class="queue-song-meta">
+                                    <p class="queue-song-name">Worry Anout Us</p>
+                                    <p class="queue-song-artist">Else</p>
+                                </div>
+                            </div>
+                            <div class="queue-favourite">
+                                <i class="fa-regular fa-heart"></i>
+                            </div>
+                        </div>
+                        <div class="queue-songs-card">
+                            <div class="queue-song-cover">
+                                <p class="queue-number-style">01</p>
+                                <img src="https://i.pinimg.com/originals/0d/95/a6/0d95a6e3ba860ff2f557c27b8dfc3e50.jpg"
+                                    alt="Roy">
+                                <div class="queue-song-meta">
+                                    <p class="queue-song-name">Worry Anout Us</p>
+                                    <p class="queue-song-artist">Else</p>
+                                </div>
+                            </div>
+                            <div class="queue-favourite">
+                                <i class="fa-regular fa-heart"></i>
+                            </div>
+                        </div>
+                        <div class="queue-songs-card">
+                            <div class="queue-song-cover">
+                                <p class="queue-number-style">01</p>
+                                <img src="https://4.bp.blogspot.com/-xJtjCLPJE6E/W9WiwwM8szI/AAAAAAAABsU/2HqUMXqdZ0MDWWvshfIJYE8Gf7jdsLaFACLcBGAs/s1600/MP3_Lijo%2BGeorge-Dj%2BChetas%252C%2BTanishk%2BBagchi%252C%2BJam8%252C%2BLijo%2BGeorge%2B%2526%2BDj%2BChetas%2B-%2BLoveyatri%2B-%2BA%2BJourney%2Bof%2BLove%2B%2528Original%2BMotion%2BPicture%2BSoundtrack%2529_iTunes_Plus_AAC_M4A.jpg"
+                                    alt="Love Yatri">
+                                <div class="queue-song-meta">
+                                    <p class="queue-song-name">Worry Anout Us</p>
+                                    <p class="queue-song-artist">Else</p>
+                                </div>
+                            </div>
+                            <div class="queue-favourite">
+                                <i class="fa-regular fa-heart"></i>
+                            </div>
+                        </div>
+                        <div class="queue-songs-card">
+                            <div class="queue-song-cover">
+                                <p class="queue-number-style">01</p>
+                                <img src="https://4.bp.blogspot.com/-xJtjCLPJE6E/W9WiwwM8szI/AAAAAAAABsU/2HqUMXqdZ0MDWWvshfIJYE8Gf7jdsLaFACLcBGAs/s1600/MP3_Lijo%2BGeorge-Dj%2BChetas%252C%2BTanishk%2BBagchi%252C%2BJam8%252C%2BLijo%2BGeorge%2B%2526%2BDj%2BChetas%2B-%2BLoveyatri%2B-%2BA%2BJourney%2Bof%2BLove%2B%2528Original%2BMotion%2BPicture%2BSoundtrack%2529_iTunes_Plus_AAC_M4A.jpg"
+                                    alt="Love Yatri">
+                                <div class="queue-song-meta">
+                                    <p class="queue-song-name">Worry Anout Us</p>
+                                    <p class="queue-song-artist">Else</p>
+                                </div>
+                            </div>
+                            <div class="queue-favourite">
+                                <i class="fa-regular fa-heart"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </aside>
+            <footer class="music-controller">
+                <div class="music-controller-col-1">
+                    <img src="https://i0.wp.com/creativesfeed.com/wp-content/uploads/2018/08/Life-in-a-Bubble-by-Aeforia.jpg?w=8000&ssl=1"
+                        alt="Onism">
+                    <div class="controller-meta">
+                        <h4>Onism by John</h4>
+                        <p>John Lennon</p>
+                    </div>
+                    <i class="fa-regular fa-heart"></i>
+                    <i class="fa-solid fa-thumbs-down"></i>
+                </div>
+                <div class="music-controller-col-2">
+                    <div class="music-cotroller-play">
+                        <i class="fa-solid fa-shuffle"></i>
+                        <i class="fa-solid fa-backward"></i>
+                        <i class="fa-regular fa-circle-pause"></i>
+                        <i class="fa-solid fa-forward"></i>
+                        <i class="fa-solid fa-repeat"></i>
+                    </div>
+                    <div class="music-controller-progress">
+                        <div class="song-progress-stime">2:33</div>
+                        <div class="song-progress-bar"></div>
+                        <div class="song-proress-etime">4:44</div>
+                    </div>
+                </div>
+                <div class="music-controller-col-3">
+                    <i class="fa-regular fa-list-music"></i>
+                    <i class="fa-solid fa-podcast"></i>
+                    <i class="fa-solid fa-volume-high"></i>
+                    <div class="volume-progress"></div>
+                    <i class="fa-solid fa-laptop-file"></i>
+                </div>
+            </footer>
+        </section>
+
+
+    </body>
 
 </html>
