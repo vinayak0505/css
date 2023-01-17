@@ -354,7 +354,7 @@ aside {
     padding: 20px;
     display: flex;
     overflow: hidden;
-    background: blue;
+    background: #000000;
 }
 
 .stations-cover {
@@ -441,6 +441,10 @@ aside {
 .latest-english-cover img {
     width: 120px;
     height: 120px;
+}
+.latest-en-date{
+    font-size: 10px;
+    opacity: 0.8;
 }
 
 .latest-english-cover p {
