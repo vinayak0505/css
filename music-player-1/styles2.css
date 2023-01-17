@@ -38,16 +38,14 @@ img {
 
 .info {
     height: 300px;
-    width: 60%;
-    padding: 50px;
     display: flex;
 }
 
-.info img
-{
+.info img {
     width: auto;
     height: auto;
 }
+
 .info-content {
     display: flex;
     flex-direction: column;
@@ -81,7 +79,8 @@ img {
     font-weight: 700;
     box-sizing: border-box;
     padding: 10px 40px;
-    background: linear-gradient(to right, #33ccff 0%, #ff99cc 100%);
+    background: rgb(9, 9, 121);
+    background: linear-gradient(90deg, rgba(9, 9, 121, 1) 0%, rgba(255, 0, 249, 1) 100%);
     border: none;
 }
 
@@ -199,9 +198,11 @@ header {
 
 .content-wrapper {
     display: flex;
-    gap: 20px;
+    gap: 30px;
     padding: 3rem;
 }
+
+.aside-heading {}
 
 .main-section {
     overflow: hidden;
@@ -331,8 +332,7 @@ aside {
 
 .queue-songs-wrapper {
     display: flex;
-    row-gap: 1rem;
-    padding: 10px 0px;
+    gap: 1rem;
     flex-wrap: wrap;
 
 }
@@ -402,11 +402,12 @@ aside {
     opacity: 0.7;
     gap: 1rem;
 }
-.queue-song-time
-{
+
+.queue-song-time {
     margin-left: 3rem;
     font-size: 14px;
 }
+
 /* Stations */
 .stations-section {
     padding: 20px;
@@ -500,7 +501,8 @@ aside {
     width: 120px;
     height: 120px;
 }
-.latest-en-date{
+
+.latest-en-date {
     font-size: 10px;
     opacity: 0.8;
 }
@@ -531,17 +533,19 @@ aside {
     align-items: center;
     flex-grow: 1;
 }
-.music-controller-col-3{
+
+.music-controller-col-3 {
     gap: 10px;
 }
-.music-controller-col-2{
+
+.music-controller-col-2 {
     flex-grow: 3;
     display: flex;
     flex-direction: column;
     color: white
 }
 
-.music-controller-col-1{
+.music-controller-col-1 {
     height: 50px;
     gap: 10px;
 }
@@ -561,6 +565,7 @@ aside {
 .controller-meta h4 {
     color: white;
 }
+
 .controller-meta p {
     color: white;
     font-size: 10px;
