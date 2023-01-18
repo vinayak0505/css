@@ -6,8 +6,16 @@
     color: white;
 }
 
+/* Removing transition when page loads */
+.preload * {
+    -webkit-transition: none !important;
+    -moz-transition: none !important;
+    -ms-transition: none !important;
+    -o-transition: none !important;
+    transition: none !important;
+}
+
 body {
-    /* Created with https://www.css-gradient.com */
     background: #0D1025;
     background: -webkit-linear-gradient(bottom right, #0D1025, #0F1125);
     background: -moz-linear-gradient(bottom right, #0D1025, #0F1125);
@@ -20,7 +28,6 @@ b {
 }
 
 img {
-    /* content: url("https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse1.mm.bing.net%2Fth%3Fid%3DOIP.ms_ni44c-_TBsdHzF0W5awHaHa%26pid%3DApi&f=1&ipt=25356c127d28494ab98627322fb3159ecef6207bb3c7f85f36cfede185d38a68&ipo=images"); */
     object-fit: cover;
     aspect-ratio: 1;
     width: 50px;
