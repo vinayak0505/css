@@ -34,11 +34,6 @@ img {
     height: 50px;
 }
 
-
-.inflex {
-    display: flex;
-}
-
 #heading {
     justify-content: space-between;
 }
