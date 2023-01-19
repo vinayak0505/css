@@ -434,17 +434,33 @@ aside {
 .party-shadow {
     box-shadow: inset 0px 0px 100px 2px rgb(255, 166, 0);
     background: url("https://cdn.funcheap.com/wp-content/uploads/2019/08/party.png");
+    transition: all 1s;
 }
 
 .electronic-shadow {
     box-shadow: inset 0px 0px 100px 2px rgb(0, 183, 255);
     background: url("https://d1llvcsapfiksz.cloudfront.net/vendors/samplephonics/hypersonic/images/Hypersonic_image1-mobile.jpg");
+    transition: all 1s;
 
 }
 
 .road-trip-shadow {
     box-shadow: inset 0px 0px 100px 2px rgb(255, 0, 200);
     background: url("https://i.ytimg.com/vi/hPEIvfDyogk/maxresdefault.jpg");
+    transition: all 1s;
+}
+
+.party-shadow:hover {
+    box-shadow: inset 0px 0px 100px 40px rgb(255, 166, 0);
+}
+
+.electronic-shadow:hover {
+    box-shadow: inset 0px 0px 100px 40px rgb(0, 183, 255);
+
+}
+
+.road-trip-shadow:hover {
+    box-shadow: inset 0px 0px 100px 40px rgb(255, 0, 200);
 }
 
 .music-cat-cover {
