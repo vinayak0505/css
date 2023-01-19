@@ -41,7 +41,7 @@ img {
     height: auto;
 }
 
-.play-hover-container a{
+.play-hover-container a {
     width: auto;
     height: auto;
 }
@@ -78,7 +78,7 @@ img {
     transition: all 1s;
 }
 
-.menu-item{
+.menu-item {
     height: 30px;
     border: 1px solid lightgray;
     align-items: center;
@@ -86,11 +86,12 @@ img {
     padding: 0px 10px;
     gap: 10px;
 }
-.menu-item *{
+
+.menu-item * {
     color: black;
 }
 
-.menu-item i{
+.menu-item i {
     display: flex;
     justify-content: center;
     height: 20px;
