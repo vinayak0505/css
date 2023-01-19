@@ -125,9 +125,10 @@ img {
 
 .invard-bottom-image-shadow {
     background: url("https://i1.sndcdn.com/avatars-000237271265-7hhnty-t500x500.jpg");
-    width: auto;
+    width: 30%;
     height: auto;
     background-size: cover;
+    background-position: center;
     aspect-ratio: 1;
     -webkit-box-shadow: inset 0px -15px 39px 10px #3374ff;
     box-shadow: inset 0px -15px 39px 10px #3374ff;
@@ -155,7 +156,8 @@ img {
 
 
 .info-content p {
-    padding: 10px 0 50px 0;
+    padding: 10px 0 10px 0;
+    flex-grow: 1;
     font-size: 0.7rem;
 }
 
@@ -292,6 +294,7 @@ header {
     display: flex;
     flex-direction: column;
     gap: 40px;
+    margin-bottom: 20px;
 }
 
 aside {
@@ -659,4 +662,120 @@ aside {
     border-radius: 50%;
     z-index: 2;
     cursor: pointer;
+}
+
+
+/* Responsive */
+@media screen and (max-width: 800px) {
+    .content-wrapper {
+        gap: 0;
+        padding: 0px 0px;
+    }
+
+    .search-bar input {
+        width: 200px;
+    }
+
+    .music-controller {
+        padding: 0;
+        gap: 0;
+    }
+}
+
+@media screen and (max-width: 600px) {
+
+    .latest-english-wrapper {
+        justify-content: center;
+    }
+
+    .content-wrapper {
+        flex-direction: column;
+        padding: 40px;
+    }
+
+    .search-bar input {
+        width: 100px;
+    }
+
+    .main-section {
+        width: 100%;
+    }
+
+    aside {
+        width: 100%;
+    }
+
+    .music-controller-col-3 {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 480px) {
+
+    .info{
+        flex-direction: column;
+        height: min-content;
+    }
+
+    .invard-bottom-image-shadow{
+        width: 100%;
+        height: auto;
+    }
+    .content-wrapper {
+        padding: 20px;
+    }
+
+    .music-controller-col-2 {
+        display: none;
+    }
+
+    .search-bar {
+        display: none;
+    }
+
+    .mobile-icon {
+        display: inline;
+    }
+
+    .music-category {
+        flex-direction: column;
+    }
+
+    .music-controller-col-1 {
+        padding-right: 10px;
+    }
+
+    .controller-meta {
+        flex-grow: 2;
+    }
+}
+
+@media screen and (max-width: 370px) {
+    .section-one-1 p {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 330px) {
+    .content-wrapper {
+        padding: 0;
+    }
+}
+
+@media screen and (max-width: 290px) {
+    .section-one-1 {
+        display: none;
+    }
+
+    .search-bar {
+        display: inline;
+    }
+
+    .section-one-2 {
+        width: 100%;
+    }
+
+    .mobile-icon {
+        display: none;
+    }
 }

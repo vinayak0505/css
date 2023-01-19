@@ -7,6 +7,19 @@
     color: white;
 }
 
+/* Hide scrollbar for Chrome, Safari and Opera */
+*::-webkit-scrollbar {
+    display: none;
+    background: transparent;
+}
+
+/* Hide scrollbar for IE, Edge and Firefox */
+* {
+    -ms-overflow-style: none;
+    /* IE and Edge */
+}
+
+
 /* Removing transition when page loads */
 .preload * {
     -webkit-transition: none !important;
@@ -42,7 +55,6 @@ img {
     /* Created with https://www.css-gradient.com */
 }
 
-
 /* image hover play icon */
 .play-hover-container {
     position: relative;
@@ -62,7 +74,8 @@ img {
     z-index: 10;
     display: flex;
     align-items: center;
-    overflow: visible;
+    border-radius: 0 !important;
+    /* overflow: visible; */
     justify-self: center;
     box-sizing: border-box;
     background-color: rgba(128, 128, 128, 0.5);
@@ -190,6 +203,10 @@ header {
     position: relative;
 }
 
+.mobile-icon {
+    display: none;
+}
+
 .search-bar input {
     background-color: #0e194c;
     height: 30px;
@@ -233,7 +250,7 @@ header {
 .content-wrapper {
     display: flex;
     gap: 20px;
-    padding: 3rem;
+    padding: 40px;
 }
 
 .main-section {
@@ -302,7 +319,7 @@ aside {
 .latest-songs-meta {
     display: flex;
     justify-content: center;
-    width: 160px;
+    width: 150px;
     gap: 4px;
     flex-direction: column;
 }
@@ -345,6 +362,7 @@ aside {
 
 .popular-artists-cover img {
     border-radius: 50%;
+    background-color: transparent;
     width: 100px;
     height: 100px;
 }
@@ -437,7 +455,7 @@ aside {
 .stations-section {
     padding: 20px;
     display: flex;
-    overflow: hidden;
+    overflow: scroll;
     background: #000000;
 }
 
@@ -460,6 +478,7 @@ aside {
     width: 100px;
     height: 100px;
     border-radius: 50%;
+    background-color: transparent;
 }
 
 .stations-name {
@@ -535,14 +554,20 @@ aside {
 
 .latest-english-wrapper {
     display: flex;
+    flex-wrap: wrap;
     gap: 1rem;
+}
+
+.latest-english-cover {
+    width: min-content;
 }
 
 .latest-english-cover img {
     width: 120px;
     height: 120px;
 }
-.latest-en-date{
+
+.latest-en-date {
     font-size: 10px;
     opacity: 0.8;
 }
@@ -573,17 +598,19 @@ aside {
     align-items: center;
     flex-grow: 1;
 }
-.music-controller-col-3{
+
+.music-controller-col-3 {
     gap: 10px;
 }
-.music-controller-col-2{
+
+.music-controller-col-2 {
     flex-grow: 3;
     display: flex;
     flex-direction: column;
     color: white
 }
 
-.music-controller-col-1{
+.music-controller-col-1 {
     height: 50px;
     gap: 10px;
 }
@@ -603,6 +630,7 @@ aside {
 .controller-meta h4 {
     color: white;
 }
+
 .controller-meta p {
     color: white;
     font-size: 10px;
@@ -711,4 +739,109 @@ aside {
     border-radius: 50%;
     z-index: 2;
     cursor: pointer;
+}
+
+/* Responsive */
+@media screen and (max-width: 800px) {
+    .content-wrapper {
+        gap: 0;
+        padding: 0px 0px;
+    }
+
+    .search-bar input {
+        width: 200px;
+    }
+
+    .music-controller {
+        padding: 0;
+        gap: 0;
+    }
+}
+
+@media screen and (max-width: 600px) {
+
+    .latest-english-wrapper {
+        justify-content: center;
+    }
+
+    .content-wrapper {
+        flex-direction: column;
+        padding: 40px;
+    }
+
+    .search-bar input {
+        width: 100px;
+    }
+
+    .main-section {
+        width: 100%;
+    }
+
+    aside {
+        width: 100%;
+    }
+
+    .music-controller-col-3 {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .content-wrapper {
+        padding: 20px;
+    }
+
+    .music-controller-col-2 {
+        display: none;
+    }
+
+    .search-bar {
+        display: none;
+    }
+
+    .mobile-icon {
+        display: inline;
+    }
+
+    .music-category {
+        flex-direction: column;
+    }
+
+    .music-controller-col-1 {
+        padding-right: 10px;
+    }
+
+    .controller-meta {
+        flex-grow: 2;
+    }
+}
+
+@media screen and (max-width: 370px) {
+    .section-one-1 p {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 330px) {
+    .content-wrapper {
+        padding: 0;
+    }
+}
+
+@media screen and (max-width: 290px) {
+    .section-one-1 {
+        display: none;
+    }
+
+    .search-bar {
+        display: inline;
+    }
+
+    .section-one-2 {
+        width: 100%;
+    }
+
+    .mobile-icon {
+        display: none;
+    }
 }
