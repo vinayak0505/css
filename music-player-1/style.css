@@ -1,10 +1,15 @@
+:root {
+    --light-transparent: 0.7;
+    --color-white: white;
+}
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: content-box;
     font-family: 'Roboto', sans-serif;
     font-weight: 500;
-    color: white;
+    color: var(--color-white);
 }
 
 /* Hide scrollbar for Chrome, Safari and Opera */
@@ -48,11 +53,8 @@ body {
 img {
     object-fit: cover;
     aspect-ratio: 1;
-    /* content: url("https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse1.mm.bing.net%2Fth%3Fid%3DOIP.ms_ni44c-_TBsdHzF0W5awHaHa%26pid%3DApi&f=1&ipt=25356c127d28494ab98627322fb3159ecef6207bb3c7f85f36cfede185d38a68&ipo=images"); */
     width: 50px;
     height: 50px;
-    /* border-radius: 50%; */
-    /* Created with https://www.css-gradient.com */
 }
 
 /* image hover play icon */
@@ -86,7 +88,7 @@ img {
 }
 
 .play-hover-container:hover .play-image {
-    opacity: 0.7;
+    opacity: var(--light-transparent);
     padding: 30%;
 }
 
@@ -94,7 +96,7 @@ img {
 /* menu popup */
 .popup-container {
     position: absolute;
-    background-color: white;
+    background-color: var(--color-white);
     color: black;
     width: 160px;
     right: 0;
@@ -158,7 +160,7 @@ header {
 }
 
 .section-one-1 {
-    color: white;
+    color: var(--color-white);
     /* background: yellow; */
     width: 30%;
     display: flex;
@@ -286,16 +288,11 @@ aside {
     margin: 0;
 }
 
-
-
-.latest-release,
-.popular-artists {}
-
 .latest-release h2,
 .popular-artists h2,
 .latest-english h2 {
     font-size: 20px;
-    color: white;
+    color: var(--color-white);
     font-weight: 700;
 }
 
@@ -342,7 +339,7 @@ aside {
 }
 
 .latest-songs-duration {
-    opacity: 0.7;
+    opacity: var(--light-transparent);
     font-size: 10px;
 }
 
@@ -369,7 +366,7 @@ aside {
 }
 
 .popular-artists-cover h3 {
-    color: white;
+    color: var(--color-white);
     font-size: 15px;
 }
 
@@ -394,12 +391,12 @@ aside {
 
 .queue-number-style {
     font-size: 12px;
-    opacity: 0.7;
+    opacity: var(--light-transparent);
 }
 
 .queue-header h2 {
     font-size: 20px;
-    color: white;
+    color: var(--color-white);
 }
 
 .green-color {
@@ -436,7 +433,7 @@ aside {
 
 .queue-song-artist {
     font-size: 10px;
-    opacity: 0.7;
+    opacity: var(--light-transparent);
 }
 
 .queue-song-cover img {
@@ -449,7 +446,7 @@ aside {
     display: flex;
     align-items: center;
     margin-right: 20px;
-    opacity: 0.7;
+    opacity: var(--light-transparent);
 }
 
 /* Stations */
@@ -574,7 +571,7 @@ aside {
 }
 
 .latest-english-cover p {
-    color: white;
+    color: var(--color-white);
 
 }
 
@@ -608,7 +605,7 @@ aside {
     flex-grow: 3;
     display: flex;
     flex-direction: column;
-    color: white
+    color: var(--color-white)
 }
 
 .music-controller-col-1 {
@@ -629,13 +626,13 @@ aside {
 
 
 .controller-meta h4 {
-    color: white;
+    color: var(--color-white);
 }
 
 .controller-meta p {
-    color: white;
+    color: var(--color-white);
     font-size: 10px;
-    opacity: 0.7;
+    opacity: var(--light-transparent);
 }
 
 .controller-fav {
@@ -645,18 +642,18 @@ aside {
 
 .controller-fav i {
     font-size: 21px;
-    color: white;
+    color: var(--color-white);
 }
 
 .music-controller-col-2 i {
     font-size: 21px;
-    color: white;
+    color: var(--color-white);
 }
 
 .music-cotroller-play {
     display: flex;
     gap: 2rem;
-    color: white;
+    color: var(--color-white);
     align-items: center;
 }
 
@@ -699,7 +696,7 @@ aside {
     bottom: 0;
     margin: auto;
     right: 60%;
-    background: white;
+    background: var(--color-white);
     width: 12px;
     height: 12px;
     border-radius: 50%;
@@ -734,7 +731,7 @@ aside {
     bottom: 0;
     margin: auto;
     right: 60%;
-    background: white;
+    background: var(--color-white);
     width: 10px;
     height: 10px;
     border-radius: 50%;
