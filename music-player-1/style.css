@@ -42,6 +42,39 @@ img {
     /* Created with https://www.css-gradient.com */
 }
 
+
+/* image hover play icon */
+.play-hover-container {
+    position: relative;
+    width: auto;
+    height: auto;
+}
+
+.play-hover-container a {
+    width: auto;
+    height: auto;
+}
+
+.play-image {
+    content: url("./play-icon.png");
+    position: absolute;
+    opacity: 0;
+    display: flex;
+    align-items: center;
+    overflow: visible;
+    justify-self: center;
+    box-sizing: border-box;
+    background-color: rgba(128, 128, 128, 0.5);
+    width: 100%;
+    padding: 20%;
+    height: 100%;
+    transition: all 1s;
+}
+
+.play-hover-container:hover .play-image {
+    opacity: 0.7;
+}
+
 /* header */
 
 header {
