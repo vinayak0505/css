@@ -11,6 +11,11 @@
     background-color: #E2E0E0;
 }
 
+.set_zero{
+    height: 0;
+}
+
+
 .display-box {
     background-color: white;
     border: 0;
