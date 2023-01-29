@@ -1,0 +1,16 @@
+#circle{
+    width: 100px;
+    height: 100px;
+    background-color: red;
+    border-radius: 50%;
+}
+
+#shape{
+    width: 100px;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    height: 100px;
+    color: white;
+    font-size: 80px;
+}
