@@ -1,12 +1,14 @@
 
 var skills = document.getElementById("skills");
 var set = document.querySelectorAll("#skills>div>div>div");
-var show = false;
+var show = new Array(set.length).fill(false);
+
 window.addEventListener("scroll", function () {
-    if (abs(skills.getBoundingClientRect().top - 200) <= 200) {
-        if (show == false) {
-            show = true;
-            set.forEach(div => {
+    for (let index = 0; index < set.length; index++) {
+        const div = set[index];
+        if (div.getBoundingClientRect().top <= this.window.innerHeight) {
+            if (show[index] == false) {
+                show[index] = true;
                 let width = div.offsetWidth;
                 div.style.width = 0;
                 let interval = setInterval(function () {
@@ -16,12 +18,7 @@ window.addEventListener("scroll", function () {
                     }
                     div.style.width = (div.offsetWidth + 1) + "px";
                 }, 30);
-            })
-        }
-    } else show = false;
+            }
+        } else show[index] = false;
+    }
 })
-
-function abs(value) {
-    if (value < 0) return -value;
-    return value;
-}
